@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* background: linear-gradient(to right, rgb(61, 151, 241), rgb(171, 30, 227)); */
+}
+
+body{
+    background: linear-gradient(to right, rgb(61, 151, 241), rgb(171, 30, 227));
+}
+
+/* =======WRAPPER======= */
+#wrapper{
+    width: 270px;
+    height: 400px;
+    background-color: #fff;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    padding: 20px;
+}
+
+/* Register */
+#wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+
+.input{
+    width: 100%;
+    padding-bottom: 25px;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.input::placeholder{
+    color: black;
+    font-size: 13px;
+}
+
+button{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(61, 151, 241);
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+button:hover{
+    animation: shake 0.5s ease-in-out infinite;
+    transform: scaleX(1.2);
+}
+
+    /* span - lam hieu ung chay duoi cac the input */
+.controll{
+    position: relative;
+    /* margin-bottom: 10px; */
+    height: 50px;
+}
+
+.controll span{
+    position: absolute;
+    width:0%;
+    top: 26px;
+    left: 0;
+    border-bottom: 2px solid rgb(29, 109, 130);
+    transition: all 0.2s linear;
+}
+
+.controll input:focus ~ span{
+    width: 100%;
+}
+.controll input:hover ~ span{
+    width: 100%;
+}
+
+small{
+    font-size: 12px;
+    color: red;
+}
+/* More Infor */
+
+.infor{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.more-infor{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.signin{
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(61, 151, 241);
+}

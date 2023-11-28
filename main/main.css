@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, rgb(61, 151, 241), rgb(171, 30, 227));
+}
+
+
+#wrapper{
+    max-width: 600px;
+    margin: 50px auto;
+    /* background-color: #fff; */
+}
+
+/* Button */
+.clickPj{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+button{
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    border: none;
+    background-color: rgb(63, 212, 238);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 2s;
+ 
+}
+
+button:hover{
+    transform: scale(1.5);
+}
+
+/* content */
+#container{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 10px;
+}
+
+.item{
+    width: 100%;
+    background-color: #c89191;
+    height: 200px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+/* ================FORM================ */
+.formAdd{
+    margin: 0 auto;
+    width: 200px;
+    /* background-color: #e18686; */
+}
+
+.formadd{
+    width: 300px;
+    height: 230px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+input{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px ;
+    border-radius: 10px;
+    border: none;
+    background-color: #eab4b4;
+}
+
+small{
+    padding-left: 10px;
+    color: rgb(185, 97, 97);
+}

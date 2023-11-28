@@ -1,0 +1,135 @@
+
+
+*{
+    font-family: 'Rubik';
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to right, rgb(61, 151, 241), rgb(171, 30, 227));
+}
+
+:root{
+    --bc: rgb(18, 19, 37);
+    --name-product: rgb(50, 135, 50);
+    --price: white;
+    --primary: rgb(248, 112, 112);
+}
+
+#wrapper{
+    width: 960px;
+    margin: 50px auto ;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 20px;
+}
+
+/* =====CARD====== */
+
+#card{
+    width: 100%;
+    height: 500px;
+    background-color: var(--bc);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* IMG */
+
+.img-card{
+    width: 38%;
+    height: 120px;
+    border-radius: 50%;
+    margin: 40px auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 3px solid rgb(255, 144, 162);
+    transition: all 0.1s linear;
+}
+.img-card img{
+    width: 100%;
+    transform: translateY(-30px);
+    background-repeat: repeat;
+    font-size: larger;
+}
+
+
+/* INF-CARD */
+
+.inf-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.job{
+    color: rgb(245, 100, 100);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* SOCIAL-CARD */
+
+.social-card {
+    width: 100%;
+    height: 70px;
+    /* background-color: #4fe0d9; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.bx{
+    font-size: 25px;
+    color: aliceblue;
+    transition: all 0.2s linear;
+}
+
+
+/* BUTTON */
+
+button {
+    font-size: 20px;
+    display: block;
+    padding: 10px 9px;
+    border-radius: 7px;
+    color: white;
+    background: none;
+    border: 1px solid rgb(245, 100, 100);
+    margin: 30px auto;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+
+/* =========HOVER========= */
+
+button:hover{
+    background-color: var(--primary);
+}
+
+.bx:hover{
+    color: var(--primary);
+}
+
+
+.img-card:hover{
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: unset;
+    margin-top: -0px;
+    image-resolution: 100%;
+    background-repeat: repeat;
+}
